@@ -1,0 +1,27 @@
+site_name: DBD Modding Wiki
+nav:
+  - Home: index.md
+  - Credits and Resources: credits.md
+  - First Setup: prerequisites.md
+  - Exploring Game Assets: fmodel.md
+theme:
+  name: material
+  palette:
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: black
+      accent: blue
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: blue
+      name: Switch to light mode
+      toggle:
+        icon: material/brightness-4
