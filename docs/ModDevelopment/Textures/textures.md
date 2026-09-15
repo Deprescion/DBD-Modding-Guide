@@ -38,15 +38,29 @@ Please refer to the [FModel setup guide](../../fmodel.md) if you haven't already
 
 2. For this guide we'll edit and then replace a jacket texture for Nea, so let's find the folder for that. I've found mine at: `******Daylight/Plugins/DBDCharacters/S05/Content/ArtAssets/Textures/Outfit037/T_NKTorso037_BC`. Thankfully, there's a reasonably standardized folder structure for most characters, so finding assets for others is often similar to this example.
 	
-	![](../../img/fmodel_s05_textures_outfit037_highlighted.png){ .center}
+	![](../../img/fmodel_s05_textures_outfit037_highlighted.png){ .center width=300}
 
-	Lets click on the folder and enter grid view so we can see the textures clearly at a glance.
+3. Click on the folder and enter grid view so we can see the textures clearly at a glance.
 
 	![](../../img/fmodel_s05_textures_outfit037_texturesgrid.png){ .center}
 
-	Then lets export it by right clicking the texture and selecting `Export > Texture`.
+4. Export the texture by right clicking it and selecting `Export > Texture`.
 
-	![](../../img/fmodel_s05_textures_outfit037_exportbc.png){ .center}
+	![](../../img/fmodel_s05_textures_outfit037_exportbc.png){ .center width=300}
+
+5. In the bottom right, you should now have a `Queued Items` button. Click it.
+	
+	![](../../img/fmodel_queuedexport.png){ .center}
+
+6. You should now be seeing the export window. Click `Export` in the bottom right, then the little arrow icon next to the asset path to open the folder which the texture was extracted to.
+
+	<div class="image-grid" markdown>
+
+	![](../../img/fmodel_export_step1.png)
+
+	![](../../img/fmodel_export_step2.png)
+
+	</div>
 
 
 # WIP
