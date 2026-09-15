@@ -1,5 +1,18 @@
 # Custom Textures Guide
 
+
+## Prerequisites
+
+<div class="hbox" markdown>
+
+[FModel](../../fmodel.md)
+
+[Unreal Engine](../../prerequisites.md)
+
+Plugin Template Project
+
+</div>
+
 ## Introduction
 
 This guide will show you how to replace the BC (Base Color) texture on a skin in the game - a modification sometimes called a "recolor". The steps shown here can also be applied to any other texture in the game, not limited to skins.
@@ -9,7 +22,7 @@ This guide will show you how to replace the BC (Base Color) texture on a skin in
 Please refer to the [FModel setup guide](../../fmodel.md) if you haven't already. The rest of this guide assumes you have FModel working. 
 
 
-## Guide
+## Exporting from the game
 1. Begin by loading all game files as shown in the left image. You should then be able to expand some folders to see the main game content as seen in the right image. 
 
 	<div class="image-grid" markdown>
@@ -35,6 +48,5 @@ Please refer to the [FModel setup guide](../../fmodel.md) if you haven't already
 
 	![](../../img/fmodel_s05_textures_outfit037_exportbc.png){ .center}
 
-	![](../../img/FModel_PAZld3bpXL.mp4){ .center}
 
 # WIP

@@ -24,3 +24,15 @@
     grid-template-columns: 1fr;
   }
 }
+
+.hbox {
+  display: flex;
+  gap: 1rem;
+}
+
+.hbox > * {
+  flex: 1;
+  padding: 1rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 4px;
+}
