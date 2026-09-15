@@ -62,5 +62,17 @@ Please refer to the [FModel setup guide](../../fmodel.md) if you haven't already
 
 	</div>
 
+## Editing your texture
+
+After you've extracted desired texture, the next step is to use any program to begin editing it. For the image below [Paint.NET](https://www.paint.net/) was used since it's free and good enough for simple edits. We won't be going into how to use any imaging editing program as that's outside the scope of this guide.
+
+When you're done editing, export your file in the highest possible PNG quality with transparency enabled to avoid ugly compression artifacts. I've edited my texture to look like this, simply recoloring it to blue. Feel free to download and use it in case you're only interested in testing the next steps.
+
+![](../../img/texture_recolor_example.png){ .center width=300 }
+
+
+## Importing into UE
+
+## Cooking and packaging
 
 # WIP
