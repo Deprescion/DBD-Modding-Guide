@@ -36,3 +36,36 @@
   border: 1px solid var(--md-default-fg-color--lightest);
   border-radius: 4px;
 }
+
+.image-row {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  --image-row-height: 250px;
+}
+
+.image-row p {
+  margin: 0;
+  min-width: 0;
+}
+
+.image-row img {
+  height: var(--image-row-height);
+  width: auto;
+  max-width: 100%;
+  display: block;
+}
+
+.image-row p:last-child {
+  margin-left: auto;
+}
+
+@media screen and (max-width: 600px) {
+  .image-row {
+    flex-direction: column;
+  }
+  .image-row img {
+    height: auto;
+    width: 100%;
+  }
+}

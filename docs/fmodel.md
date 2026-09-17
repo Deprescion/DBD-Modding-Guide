@@ -4,6 +4,8 @@ This section is important to understanding how and where the game stores all its
 
 ## FModel Setup for DaylightGame
 
+### Choosing Directory
+
 Begin by opening FModel and clicking `Directory > Selector` in the top left corner. Then:
 
 1. Click the icon with the two arrows ↑↓ under the `ADD UNDETECTED GAME` text.
@@ -18,19 +20,38 @@ Begin by opening FModel and clicking `Directory > Selector` in the top left corn
 
 <div class="image-grid" markdown>
 
-![](../../img/fmodel_setup_step1.png)
+![](img/fmodel_setup_step1.png)
 
-![](../../img/fmodel_setup_step2-3.png)
+![](img/fmodel_setup_step2-3.png)
 
-![](../../img/fmodel_setup_step4.png)
+![](img/fmodel_setup_step4.png)
 
-![](../../img/fmodel_setup_step5.png)
+![](img/fmodel_setup_step5.png)
 
 </div>
 
 !!! note
 	You can choose whatever `Name` you want for the game you're adding. If you are actively modding many different game versions it's recommended that you choose a name which reflects the game version.
 
+### Applying AES Key
+
+1. Click `Directory > AES` in the top left of FModel.
+
+2. Paste the AES key into the text box. The current AES key for DaylightGame is `0x22b1639b548124925cf7b9cbaa09f9ac295fcf0324586d6b37ee1d42670b39b3`.
+
+3. Press the `OK` button.
+
+<div class="image-row" style="--image-row-height: 170px" markdown>
+
+![](img/fmodel_aes_step1.png){ .center }
+
+![](img/fmodel_aes_step2-3.png)
+
+</div>
+
+
+
+### Applying Mappings File
 
 
 # OLD vvvvvv
