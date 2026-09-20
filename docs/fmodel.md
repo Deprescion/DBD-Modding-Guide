@@ -41,27 +41,45 @@ Begin by opening FModel and clicking `Directory > Selector` in the top left corn
 
 3. Press the `OK` button.
 
-<div class="image-row" style="--image-row-height: 170px" markdown>
+<div class="image-row" style="--image-row-height: 190px" markdown>
 
-![](img/fmodel_aes_step1.png){ .center }
+![](img/fmodel_aes_step1.png)
 
 ![](img/fmodel_aes_step2-3.png)
 
 </div>
 
-
-
 ### Applying Mappings File
 
+First, download the latest Mappings file by clicking the `Mappings` button in the [top right corner of this](https://deprescion.top/guides) website.
+![](img/deprescion.top_mappings.png){ .center }
 
-# OLD vvvvvv
+1. Click `Settings` in the top left of FModel.
 
-- Download the latest Mappings file by clicking the [Mappings button in the top right corner](https://deprescion.top/guides).
-- Open FModel, open the "Settings" tab at the top. Under General, enable "Local Mapping File" and set "Mapping File Path" to the downloaded Mappings file, then press OK.
-- Back in FModel, click on "Directory" tab at the top left, then click on "AES" and paste in this Main Static Key: `0x22b1639b548124925cf7b9cbaa09f9ac295fcf0324586d6b37ee1d42670b39b3`
-- Press OK and click on "Directory" tab one more time, this time click on "Selector", below "ADD UNDETECTED GAME" texts, click on the up/down arrow symbol.
-- At the very bottom click the 3 dots on the right of "Directory" (make sure it's the bottom "Directory", below the arrows symbol from before) and locate your Game installation's Paks folder (where you normally install mods).
-- As the Name, you can set it to "Dead by Daylight (LIVE)", for example, then press the blue + button, not the OK button yet. After pressing the + symbol, you'll find the top side of the panel has now been updated, the last instruction here is to select the correct UE version, click on "UE Versions" and with your keyboard begin typing "deadbydaylight", once you see GAME_DeadByDaylight (GAME_UE5_7) select it - NOTE do NOT select GAME_DeadByDaylight_OLD!
-- You can then press the OK button and you should see the game's assets begin loading in. In case you struggled with any part of this, you can watch [this tutorial by ToxicShinobi](https://www.youtube.com/watch?v=8pZvSYabZN4). [Here's another slightly outdated tutorial you could use by eefernal](https://www.youtube.com/watch?v=AeB0kb4DuuQ). Do note you will need to use latest mappings from above, not ones attached to these respective tutorials' video descriptions.
+2. In the `General` tab, enable `Local Mapping File`.
 
-<img src="/img/fmodelsetup.png" allowfullscreen>
+3. Click the `...` button to the right of the `Mapping File Path` textbox which should have appeared.
+
+4. Choose the mapping file.
+
+5. Close the settings window by pressing the `OK` button.
+
+
+![](img/fmodel_mappings_step1.png){ .center }
+
+![](img/fmodel_mappings_step2-3.png){ .center width=500 }
+
+<div class="image-row" style="--image-row-height: 220px" markdown>
+
+![](img/fmodel_mappings_step4.png)
+
+![](img/fmodel_mappings_step5.png)
+
+</div>
+
+### You're done!
+
+You can now load and explore game's assets! In case you struggled with any part of this, you can watch [this](https://www.youtube.com/watch?v=8pZvSYabZN4) tutorial by *ToxicShinobi*, or [this](https://www.youtube.com/watch?v=AeB0kb4DuuQ) other slightly outdated tutorial by *eefernal*. 
+
+!!! warning
+	Do note that if you're modding the latest game version you will need to use the most up-to-date **Mappings** and/or **AES Key** from above, not ones attached to these respective tutorials' video descriptions.
