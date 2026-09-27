@@ -73,6 +73,53 @@ When you're done editing, export your file in the highest possible PNG quality w
 
 ## Importing into UE
 
+Begin by starting up the UE DaylightGame template project. After it loads, you should see something like the image below. Let's click the `Content Drawer` button in the bottom left.
+
+![](../../img/ueeditor_firststartup.jpg)
+
+Now open the plugins folder and find the plugin of the character you're replacing a texture on, in this tutorial that is `S05`. When we open this folder it will be completely empty by default - we will need to recreate the game's folder structure so our texture gets put in the right place.
+
+<div class="image-row" style="--image-row-height: 170px" markdown>
+
+![](../../img/ueeditor_contentdrawer_hoverplugins.png)
+
+![](../../img/ueeditor_s05_plugin.png)
+
+</div>
+
+If we look in FModel we can see the folder structure we need: `Content > ArtAssets > Textures > Outfit037`. Let's recreate it in UE; you can create new folders by either right clicking the empty space then choosing `New Folder`, or left clicking the empty space then pressing `CTRL + N`.
+
+<div class="image-row" style="--image-row-height: 190px" markdown>
+
+![](../../img/fmodel_s05_textures_outfit037_highlighted.png)
+
+![](../../img/ueeditor_s05_recreatedfolders.png)
+
+</div>
+
+Now import the texture by dragging it in from file explorer. You can see that I appended `_EDIT` to the file name while I was editing it, we need to fix this.
+
+<div class="image-row" style="--image-row-height: 230px" markdown>
+
+![](../../img/ueeditor_importtexture.png)
+
+![](../../img/ueeditor_importedtexture.png)
+
+</div>
+
+Our asset needs to be named **exactly** as it is named in FModel, otherwise it won't replace anything in the game, meaning the mod won't be visible. You can copy the exact asset name in FModel by right clicking it and choosing: `Copy > Package Name w/o Extension`.
+
+<div class="image-row" style="--image-row-height: 330px" markdown>
+
+![](../../img/fmodel_copypackagename.png)
+
+![](../../img/ueeditor_renamedtexture.png)
+
+</div>
+
+We've now placed the asset at the correct location and made sure it's named correctly, great! If you are replacing multiple textures, you will need to do the same for all of them. After that, the next step is cooking and packaging our mod.
+
+
 ## Cooking and packaging
 
 # WIP
