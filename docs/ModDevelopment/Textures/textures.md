@@ -182,3 +182,5 @@ After we've made sure we're only packing what we want, we can go ahead and run U
 Congratulations, the mod is complete! The `.bat` script should have automatically moved the newly packed mod into your game files, and if it didn't then something is probably wrong (check that the `paks_directory.txt` is correct). 
 
 Depending on which mod loader/pakbypass you use, you may have to manually create a `.sig` file for the mod as well. You can do this by going to the game's Paks folder and copying any `.sig` file then renaming it to your mod's pakchunk name.
+
+![](../../img/textureguide_result.png){ .center width=500 }
