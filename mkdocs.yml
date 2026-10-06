@@ -6,6 +6,9 @@ nav:
   - Exploring Game Assets: fmodel.md
   - Creating Mods:
     - Textures: ModDevelopment\Textures\textures.md
+    - Materials: 
+      - Overview: ModDevelopment/MaterialInstances/overview.md
+      - Emissive/Legacy: ModDevelopment/MaterialInstances/mi-emissive.md
 
 theme:
   name: material
