@@ -26,7 +26,17 @@ If you are looking for tutorials about achieving certain effects or results from
 
 ## Importing the materials into your Unreal Project
 
-Download the materials then extract the Content folder into your project's Content folder. Be sure that the path in Unreal Engine is `Content` → ETC, not `Content` → `Content` → ETC.
+Download the materials then extract them into your project. You can simply place the `.zip` in the same directory as your `.uproject` and then choose `Extract Here`. The specific placement of this option may differ depending on what zip program you use.
+
+If you're doing this in a fresh project it shouldn't prompt you to replace any existing files. After extraction, make sure that the path in Unreal Engine is `Content > ...`, not `Content > Content > ...`.
+
+<div class="image-row" style="--image-row-height: 290px" markdown>
+
+![](../../img/extractdummymaterials.png)
+
+![](../../img/ueeditor_correctdummymaterialspath.png)
+
+</div>
 
 ## Modding Limitations
 
@@ -52,7 +62,7 @@ Materials can have 4 types of parameters, but you can only change 3 of them.
 
 *All parameter types above can be changed however you want for any material.*
 
-`Static Switch` parameters can **not** be changed arbitrarily, it will crash. They are not included in the dummy materials for this reason. If you're following the tutorials here you will never need to know what these are or touch them. However, if you're more experienced and want to enable/disable one, there is a proper way to do it; you will need to find an already existing instance in the game which has the switch combination you want, and then parent your own instance to that. It is not guaranteed that such an instance will exist.
+`Static Switch` parameters can **not** be changed arbitrarily, it will crash. They are not included in the dummy materials for this reason. If you're following the tutorials here you will never need to know what these are or touch them. However, if you're more experienced and want to enable/disable one, there is a proper way to do it; you will need to find an already existing instance in the game which has the switch combination you want, and then parent your own instance to it. It is not guaranteed that such an instance will exist.
 
 An additional parameter category that every material instance has is `Material Property Overrides`, you can find them below the normal parameters in the same panel. They include the option `Two Sided` among a few others, which you may be tempted to touch. Unfortunately, you cant, it will crash if you touch any of these, leave them default. 
 
@@ -64,7 +74,7 @@ Due to custom engine changes by the game developers, material instances need to 
 
 ## Naming Conventions
 
-When inspecting the game files, it's good to know what different suffixes on textures usually mean. Thankfully for us, the game developers are relatively consistent in their naming convention. We highly suggest that you also follow this when making your own mods, but technically nothing forces you for the most part.
+When inspecting the game files, it's good to know what different suffixes on textures usually mean. Thankfully for us, the game developers are relatively consistent in their naming convention. We highly suggest that you also follow this when making your own mods, but technically nothing forces you to for the most part.
 
 | Texture Type | Suffix | Description |
 |---|---|---|
