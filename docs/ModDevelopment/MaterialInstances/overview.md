@@ -46,7 +46,7 @@ Some things are currently not possible to mod into the game. We recommend unders
 
 One important thing that limits us and influences how we work is that we **can not** create our own custom *materials*, only *instances* of ones that already exist in the game. Trying to create a base material will crash the game or show up blank. This is why you need the [dummy materials](link) so you can create your own variations of the already existing ones by manipulating their exposed parameters. The dummy materials are materials and material instances which already exist in DaylightGame, but have been recreated (credits @YourLordAdam) in the UE Editor so that we can parent our own instances to them. We never pack these dummy materials into our mods, because when loaded in the game we want our instances to look for its parent and find the *vanilla* one, which makes it work properly.
 
-![](../../img/ueeditor_newmaterialasset.png){ .center }
+![](../../img/ueeditor_badgoodnewmaterialasset.png){ .center }
 
 ### Material Parameters
 
