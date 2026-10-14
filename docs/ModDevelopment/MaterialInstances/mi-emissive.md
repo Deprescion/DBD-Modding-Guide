@@ -40,6 +40,26 @@ After finding the correct one, close the 3D Viewer that probably opened - you sh
 
 </div>
 
+## Creating a BDE texture
+
+In a `_BDE` texture, the blue color channel controls the emissive. Vanilla cosmetics usually keep it around `140` max, as in, `RGB (0, 0, 140)`, lower values mean lower emissive strength for that region. Your final `_BDE` should be blue emissive regions on a completely black background.
+
+To create the BDE shown in the images below, I used the lasso tool to cut the relevant parts to a new layer, then made the cutout the correct blue color. This guide will not teach you the process of that, there are other resources for learning whatever image editor you want to use.
+
+<div class="image-row" style="--image-row-height: 130px" markdown>
+
+![](../../img/createBDE_1.png)
+
+![](../../img/createBDE_2.png)
+
+![](../../img/createBDE_3.png)
+
+</div>
+
+![](../../img/createBDE_4.png){ .center width=300 }
+
+
+
 ## Creating the material instance
 
 Create a material instance at the correct path so it replaces the asset in-game, make sure to name it the same as it is FModel too. If the folders don't already exist, create them.  
@@ -61,6 +81,19 @@ Now, open the material instance you created and change its parent to `MI_Camper_
 ![](../../img/ueeditor_camperslashercust.png){ .center width=300 }
 
 </div>
+
+Now you should be able to see that the Scalar, Texture, and Vector parameters categories have appeared at the top of the panel. As you can see, there are quite a few of them, but we will not need to touch most. 
+
+<div class="image-row" style="--image-row-height: 235px" markdown>
+
+![](../../img/ueeditor_micampercust.png){ .center width=300 }
+
+![](../../img/ueeditor_micampercustscalars.png){ .center width=300 }
+
+</div>
+
+Because we only want to add our emissive without changing anything else on the material instance, we will have to copy the configuration the game uses to our version (except for the parts we want to add/change, like our new BDE).
+
 
 # WIP
 
