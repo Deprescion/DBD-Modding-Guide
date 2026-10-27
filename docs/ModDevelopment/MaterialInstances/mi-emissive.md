@@ -145,56 +145,50 @@ For `Scalar` parameters:
 
 - `EM Intensity` - the most basic, you need this to be over 0 for anything to show up. Common value is 3
 
-<div class="image-row" style="--image-row-height: 250px" markdown>
+<div class="image-row" style="--image-row-height: 190px" markdown>
 
 ![](../../img/ueeditor_emissivevectorparameters.png)
 
-![](../../img/ueeditor_emissivevectorparameters.png)
+![](../../img/ueeditor_emissivescalarparameters.png)
 
 </div>
 
+??? note "Settings for "Legacy" emissive look"
+	
+	If you want to make your emissive look like Legacy, simply change your settings to match the following:
 
+	| Parameter | Value |
+	|---|---|
+	| EM Intensity | 10 |
+	| EM Noise Intensity | 2 |
+	| EM Noise Scale | 5 |
+	| EM Noise ScaleFar | 10 |
+	| EM Noise Speed X | 0.5 |
+	| EmissiveMask Custom | 5 |
+	| Emissive_Tile | 3 |
+	| EM Color | R = 1, G = 0.552359, B = 0.212663 |
+	| Emissive Touch | R = 1, G = 0.567833, B = 0.25 |
 
-# WIP
+	If you want your emissive area to be solid color instead of having an embers look, simply change the `Emissive_Tileable_Texture` to a blank white box and set `EM Noise Intensity` to 0.
 
----
+## Cooking and packaging
 
-# WIP
+After cooking the mod, there are some things we have to do before packing to make sure everything works correctly. We have used "dummy" materials to create our material instance - we do **not** want to pack these into our mod as it would replace a bunch of vanilla assets we don't want to replace! As a rule of thumb, you should always make sure that you aren't packing any unintentional asset. 
 
-## Enabling the Alpha Texture (OPTIONAL)
+For this material replacement, the *only* things we want to pack is the material instance itself and the textures we made it use, nothing else. Let's look at our cooked output in `{Project}\Saved\Cooked\Windows\******Daylight\`. We know that all our assets we want to pack are in `Plugins`, so we remove `Content`, `Metadata`, and `AssetRegistry.bin`. Then let's simply click through the `Plugins` folder which we're keeping and look for anything we don't want to pack. 
 
-Enable Opacity Mask Texture or MaskFromOtherPart depending on whether you're using a Killer or Survivor model and assign your `_M` texture to it.
+As an example of a mistake that's easy to make, I found old assets from when I wrote the [Texture](../Textures/textures.md) guide! In your case, when making multiple mods, you might find assets from other mods you've done (if you're reusing the same uproject). We of course don't want to accidentally pack unrelated mods together, so we delete these assets first (if there are any).
 
-## Enabling the Emission Texture (OPTIONAL)
+<div class="image-row" style="--image-row-height: 150px" markdown>
 
-Enable Blood Dirt Emissive and assign your `_BDE` texture to it. then enable EM Intensity and change it to your desired amount the higher it is the brighter the emission will be. Enable EM Color and set it to your desired color. See video below for an explanation on what each of the emission values do.
+![](../../img/explorer_deletecontentmetadataassetregistry.png)
 
-The other Emission settings are usable. Experimenting with them or just copying from materials in the game is recommended.
+![](../../img/explorer_deleteleftovers.png)
 
-If you want to make your emission to look like Legacy, simply change your settings to match the following:
+</div>
 
-| Parameter | Value |
-|---|---|
-| EM Intensity | 10 |
-| EM Noise Intensity | 2 |
-| EM Noise Scale | 5 |
-| EM Noise ScaleFar | 10 |
-| EM Noise Speed X | 0.5 |
-| EmissiveMask Custom | 5 |
-| Emissive_Tile | 3 |
-| EM Color | R = 1, G = 0.552359, B = 0.212663 |
-| Emissive Touch | R = 1, G = 0.567833, B = 0.25 |
+## Result
 
-If you want your emissive area to be solid color instead of having an embers look simply change the Emissive_Tileable_Texture to a blank white box and set EM Noise Intensity to 0. (This texture is included)
+After packing, we can load into the game and see how it looks. You will probably have to go back an forth between the game and UE to adjust the values until it looks like you want it to. 
 
-- You should enable EmissiveTouch if using emission.
-- The Hair material works on both killer and survivor.
-- The Hide Head_Mask is just an inverted `_M` texture that only affects killers in first person. so for it Black is unhidden and White is hidden.
-
-### Texture Based EM Colors
-
-These materials work just like `MI_Camper_Cust` and `MI_Slasher_Cust` but the `Emissive_Tileable_Texture` controls the color of the emission instead of `EM Color` and `Emissive Touch`
-To use these simply change your parent material to `MI_Camper_Cust_AdamEmission` for survivors or `MI_Slasher_Cust_AdamEmission`
- for killers. 
-Set up your emission as usual, However leave `EM Color` and `Emissive Touch` at Their default values, then change `Emissive_Tileable_Texture` to your desired texture.
-And you're good to go.
+![](../../img/miemissiveguide_result.png){ .center width=300 }
