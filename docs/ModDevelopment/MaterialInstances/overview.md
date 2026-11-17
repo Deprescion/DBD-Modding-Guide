@@ -14,7 +14,7 @@ Plugin Template Project
 
 <div class="hbox" markdown>
 
-[Dummy Materials](link)
+[Dummy Materials](https://github.com/YourlordAdam/ModbyDaylight-EditorMaterials)
 
 </div>
 
@@ -44,7 +44,7 @@ Some things are currently not possible to mod into the game. We recommend unders
 
 ### Materials vs Material Instances
 
-One important thing that limits us and influences how we work is that we **can not** create our own custom *materials*, only *instances* of ones that already exist in the game. Trying to create a base material will crash the game or show up blank. This is why you need the [dummy materials](link) so you can create your own variations of the already existing ones by manipulating their exposed parameters. The dummy materials are materials and material instances which already exist in DaylightGame, but have been recreated (credits @YourLordAdam) in the UE Editor so that we can parent our own instances to them. We never pack these dummy materials into our mods, because when loaded in the game we want our instances to look for its parent and find the *vanilla* one, which makes it work properly.
+One important thing that limits us and influences how we work is that we **can not** create our own custom *materials*, only *instances* of ones that already exist in the game. Trying to create a base material will crash the game or show up blank. This is why you need the [dummy materials](https://github.com/YourlordAdam/ModbyDaylight-EditorMaterials) so you can create your own variations of the already existing ones by manipulating their exposed parameters. The dummy materials are materials and material instances which already exist in DaylightGame, but have been recreated (credits @YourLordAdam) in the UE Editor so that we can parent our own instances to them. We never pack these dummy materials into our mods, because when loaded in the game we want our instances to look for its parent and find the *vanilla* one, which makes it work properly. Download Dummy Materials by clicking Code -> Download ZIP on github link provided at the top of this page, then drag the Characters, Materials and Textures folders into your UE project's Content folder.
 
 ![](../../img/ueeditor_badgoodnewmaterialasset.png){ .center }
 
